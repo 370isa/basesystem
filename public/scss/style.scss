@@ -1,0 +1,23 @@
+/*
+  Theme Name: base-system
+  Text Domain: wnv-theme-base-system
+*/
+
+// External libraries.
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Custom variables.
+@import 'variables';
+
+// Config-default.
+@import 'config-default';
+
+// Theme.
+@import 'date-day';
+@import 'details-page';
+@import 'form';
+@import 'header';
+@import 'main';
+@import 'table';
+
+// Components

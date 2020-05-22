@@ -1,0 +1,35 @@
+.table {
+  box-shadow: 0px 1px 2px gray;
+
+  thead {
+    background-color: $gray;
+    color: $white;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+
+  .col-center {
+    text-align: center;
+  }
+
+  tbody {
+    .btn {
+      height: 30px;
+      margin: 0;
+      padding: 2px;
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    tr {
+      background-color: $gray-lighter;
+      &:nth-child(even) {
+        background-color: $gray-lighted;
+      }
+    }
+  }
+}

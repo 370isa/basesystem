@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-8 form-group service-name">
+    <label for="inputState">Nome do Serviço</label>
+    <input
+      class="form-control"
+      name="name"
+      type="text"
+      value="{{ service.name }}"
+    >
+  </div>
+  <div class="col-md-4 form-group service-time">
+    <label for="time">Tempo de Duração</label>
+    <input
+      class="form-control time"
+      name="time"
+      type="text"
+      value="{{ service.time }}"
+    >
+  </div>
+  <div class="col-md-4 form-group service-price">
+    <label for="money">Valor (R$)</label>
+    <input
+      id="money"
+      class="form-control money"
+      name="price"
+      type="text"
+      value="{{ service.price }}"
+    >
+  </div>
+</div>

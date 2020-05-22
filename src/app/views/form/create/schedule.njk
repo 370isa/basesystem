@@ -1,0 +1,68 @@
+{% extends 'frame/layout.njk' %}
+
+{% block content %}
+  <div class="container">
+    <div class="col-xs-12">
+      <div class="row">
+        <h2>Novo Agendamento</h2>
+        <form>
+          <div class="form-row">
+            <div class="col-md-6 form-new-schedule">
+              <div class="row">
+                <div class="col-md-8 form-group customer-name">
+                  <label for="inputState">Cliente</label>
+                  <select id="inputState" class="form-control active">
+                    <option selected>Fulano</option>
+                    <option>Ciclano</option>
+                    <option>Beltrano</option>
+                  </select>
+
+                  <input type="text" class="form-control" placeholder="Your Name">
+
+                  <div class="form-check new-customer">
+                    <input class="form-check-input"
+                      type="checkbox"
+                      id="gridCheckNewCustomer"
+                      onclick="formChecked('#gridCheckNewCustomer', '.customer-name')
+                    ">
+                    <label class="form-check-label" for="gridCheckNewCustomer">
+                      Cliente Novo.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4 form-group customer-phone">
+                  <label for="inputState">Telefone</label>
+                  <input type="text" class="form-control" name="customer-phone" size="20" maxlength="14">
+                </div>
+
+                <div class="col-md-12 form-group customer-name">
+                  <label for="inputState">Serviços</label>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState">Data para agendamento</label>
+                  <input type="date" class="form-control" name="schedule-date" size="20" maxlength="14">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState">Horário de início</label>
+                  <input type="date" class="form-control" name="schedule-date" size="20" maxlength="14">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Agendar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

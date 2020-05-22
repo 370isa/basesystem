@@ -1,0 +1,37 @@
+.form-new-schedule {
+  .customer-name {
+    .form-control {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.form-create,
+.form-update {
+  position: relative;
+
+  button[type="submit"] {
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+}
+
+form {
+  &.form-delete {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    button {
+      margin: 0 85px 0 auto;
+      position: relative;
+      z-index: 9;
+    }
+  }
+}
+

@@ -1,0 +1,56 @@
+// @see variables.scss
+
+//
+// Colors
+// -------------------------
+
+$black:                 #000;
+$gray-darker:           #222;
+$gray-dark:             #303030;
+$gray:                  #58585a;
+$gray-light:            #ebebeb;
+$gray-lighter:          #f8f8f8;
+$gray-lighted:          #e5e5e5;
+
+$white:                 #fff;
+
+$brand-primary:         #48647b;
+$brand-second:          #54ad87;
+$brand-success:         #00ee00;
+$brand-info:            #ffee00;
+$brand-warning:         #ff9900;
+$brand-danger:          #ee0011;
+
+$text-color:            #2d506d;
+$color-theme:           #48647b;
+$text-date:             #54ad87;
+$text-important:        #8a7fb9;
+$btn-submission:        #c00002;
+$btn-restricted:        #8a0204;
+
+//
+// Rede Social
+// --------------------------
+
+$facebook:  #615da7;
+$instagram: #d8001a;
+$linkedin:  #d4432f;
+$twitter:   #6d9fee;
+
+//
+// Typography
+// -------------------------
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+$font-family-default:     'Roboto', sans-serif;
+
+$font-size-base: 16px;
+$font-size-large: 18px;
+$font-size-small: 14px;
+$font-size-smaller: 12px;
+
+$font-size-h1: 2rem;
+$font-size-h2: 1.8rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.4rem;
+$font-size-h6: 1.2rem;

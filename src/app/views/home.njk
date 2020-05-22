@@ -1,0 +1,75 @@
+{% extends 'frame/layout.njk' %}
+
+{% block content %}
+  <div class="container">
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="date-day">
+          <a href="#" class="arrow-date">
+            <i class="material-icons">keyboard_arrow_left</i>
+          </a>
+          <div class="date">
+            <div class="day">21/</div>
+            <div class="month">04</div>
+            <div class="year">2020</div>
+          </div>
+          <a href="#" class="arrow-date">
+            <i class="material-icons">keyboard_arrow_right</i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Agendados do dia:</h2>
+        <table class="table schedule-day">
+          <thead>
+            <tr>
+              <th scope="col" width="100">Hora</th>
+              <th scope="col">Cliente</th>
+              <th scope="col">Ação</th>
+              <th scope="col" width="100" class="col-center">Editar</th>
+              <th scope="col" width="200" class="col-center">Cancelar / Confirmar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>10h00</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td class="col-center">
+                <button type="button" class="btn btn-info btn-edit">
+                  <i class="material-icons md-18">edit</i>
+                </button>
+              </td>
+              <td class="col-center">
+                <button type="button" class="btn btn-danger btn-cancel">
+                  <i class="material-icons md-18">close</i>
+                </button>
+                <button type="button" class="btn btn-success btn-confirm">
+                  <i class="material-icons md-18">done</i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th>10h00</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td class="col-center">
+                <button type="button" class="btn btn-info btn-edit">
+                  <i class="material-icons md-18">edit</i>
+                </button>
+              </td>
+              <td class="col-center">
+                <button type="button" class="btn btn-danger btn-cancel">
+                  <i class="material-icons md-18">close</i>
+                </button>
+                <button type="button" class="btn btn-success btn-confirm">
+                  <i class="material-icons md-18">done</i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

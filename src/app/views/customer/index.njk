@@ -1,0 +1,61 @@
+{% extends 'frame/layout.njk' %}
+
+{% set main_after %}
+  <form class="form-inline my-2 my-lg-0" action="/admin/clientes" method="GET">
+    <input
+      class="form-control mr-sm-2"
+      type="search"
+      name="search"
+      placeholder="Nome ou Telefone"
+      value="{{ filter }}"
+    >
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+      Buscar
+    </button>
+  </form>
+{% endset %}
+
+{% block content %}
+  <div class="container">
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="header-details-page">
+          <h2>Clientes</h2>
+          <a href="/admin/clientes/cadastrar-cliente" class="btn btn-primary btn-create-new-item">
+            Cadastrar Novo Cliente
+          </a>
+        </div>
+        <table class="table schedule-day">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Telefone</th>
+              <th scope="col">Cliente desde</th>
+              <th scope="col" width="200" class="col-center">Relatório Unitário</th>
+              <th scope="col" width="100" class="col-center">Editar</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for customer in customers %}
+              <tr>
+              <td>{{ customer.name }}</td>
+              <td>{{ customer.phone }}</td>
+              <td>{{ customer.create_at }}</td>
+              <td class="col-center">
+                <button type="button" class="btn btn-secondary btn-edit">
+                  <i class="material-icons md-18">list_alt</i>
+                </button>
+              </td>
+              <td class="col-center">
+                <a href="/admin/clientes/{{ customer.id }}/editar-cliente" class="btn btn-info btn-edit">
+                  <i class="material-icons md-18">edit</i>
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

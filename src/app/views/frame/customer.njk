@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-8 form-group customer-name">
+    <label for="inputState">Nome</label>
+    <input
+      type="text"
+      name="name"
+      class="form-control"
+      value="{{ customer.name }}"
+    >
+  </div>
+  <div class="col-md-4 form-group customer-name">
+    <label for="inputState">Telefone</label>
+    <input
+      type="text"
+      class="form-control phone_with_ddd"
+      name="phone"
+      value="{{ customer.phone }}"
+    >
+  </div>
+  <div class="col-md-5">
+    <label for="inputState">Data de Nascimento</label>
+    <input
+      type="date"
+      class="form-control"
+      name="birth"
+      size="20" maxlength="14"
+      value="{{ customer.birth }}"
+    >
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.main {
+  li {
+    &.nav-item {
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+
+    a {
+      white-space: nowrap;
+    }
+  }
+
+  form {
+    width: auto;
+  }
+}

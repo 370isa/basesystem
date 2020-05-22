@@ -1,0 +1,11 @@
+.header-details-page {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  a {
+    &.btn-create-new-item {
+      height: fit-content;
+    }
+  }
+}
